@@ -27,19 +27,23 @@ This notebook develops and evaluates multiple machine learning models for classi
 
 # Models
 - `GaussianNB()` – Naive Bayes
-- `LogisticRegression()` – Logistic Regression
 - `SVC(kernel='rbf', probability=True)` – Support Vector Machine
 - `XGBClassifier(eval_metric='logloss')` – Extreme Gradient Boosting (XGBoost)
 
 ---
 
 # Evaluation
-- **Metrics:** `accuracy_score`, `classification_report`
+- **Metrics:** `accuracy_score`, `cohen_kappa`, `mcc`, `balanced_accuracy`, `brier_score`, `roc_auc_score`
 - **Visualizations:** 
   - Countplot for class distribution  
   - Correlation heatmap of label-encoded features  
   - Pairplot of selected features (`cap-shape`, `odor`, `gill-color`, etc.)
 - **Tuning:** No tuning (e.g., GridSearchCV) applied
+
+---
+
+# Statistical Comparison
+- **Stats:** `10 fold cross validation`, `t-test`, `Wilcoxon Test`
 
 ---
 
